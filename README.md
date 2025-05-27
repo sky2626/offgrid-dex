@@ -1,4 +1,4 @@
-# OffGrid Dx: Project Story
+# Project Story: OffGrid Dx
 
 ---
 
@@ -22,15 +22,15 @@ Building OffGrid Dx was an iterative journey, driven by the core principle of **
 
 We began by researching common ailments and diagnostic workflows relevant to community health in African contexts. This informed the structure of our **compressed medical knowledge base** and the design of the **symptom checker logic**. We focused on creating a decision-tree-like system that guides the CHW through questions based on patient input, leading to potential diagnoses and recommended initial treatments.
 
-For the application itself, we chose **Flutter** for its ability to build performant cross-platform apps from a single codebase, making it suitable for a range of Android and iOS devices. The offline requirement meant that all data – from disease profiles and treatment protocols to patient input and diagnostic results – had to be stored **locally on the device**. We used a robust **SQLite database** for this purpose, optimizing its structure for efficient retrieval on lower-spec phones.
+For the application itself, we chose **React Native with Expo** for its rapid development capabilities and ability to build performant cross-platform mobile apps. This choice allowed us to quickly iterate and deploy on a range of Android and iOS devices. The offline requirement meant that all data – from disease profiles and treatment protocols to patient input and diagnostic results – had to be stored **locally on the device**. We used a robust **SQLite database** for this purpose, optimizing its structure for efficient retrieval on lower-spec phones.
 
-Crucially, the diagnostic algorithms are **entirely on-device**. We deliberately avoided cloud-based AI models, instead opting for lightweight, rule-based logic initially, with plans to integrate highly optimized, **quantized AI models (using TensorFlow Lite)** for more complex pattern recognition as the project matures. The user interface was designed with simplicity and **energy efficiency** in mind, minimizing animations and background processes to extend battery life.
+Crucially, the diagnostic algorithms are **entirely on-device**. We deliberately avoided cloud-based AI models, instead opting for lightweight, rule-based logic initially, with plans to integrate highly optimized **quantized AI models (using TensorFlow.js for React Native)** for more complex pattern recognition as the project matures. The user interface was designed with simplicity and **energy efficiency** in mind, minimizing animations and background processes to extend battery life.
 
 ---
 
 ## Challenges Faced
 
-Developing OffGrid Dx presented several significant hurdles, each a learning opportunity:
+Developing OffGrid Dx presented several significant hurdles, each a valuable learning opportunity:
 
 * **Data Compression and Management:** The biggest challenge was compressing a substantial amount of medical knowledge into a format that was both comprehensive enough for diagnostic utility and small enough to reside entirely on a mobile device, without compromising performance. Balancing detail with device capacity required meticulous data structuring and optimization.
 
